@@ -1,0 +1,38 @@
+# =============================================================
+#  AKO ODONTO — LP Geral 2026
+#  .gitignore em modo WHITELIST: por padrão IGNORA TUDO e libera
+#  APENAS os arquivos necessários pra LP funcionar no ar.
+#  (Estratégia, notas e material interno NUNCA sobem pro GitHub.)
+# =============================================================
+
+# 1) Ignora tudo na raiz
+/*
+
+# 2) Libera só o que a LP precisa
+!/index.html
+!/README.md
+!/.gitignore
+!/css/
+!/js/
+!/assets/
+!/robots.txt
+!/sitemap.xml
+
+# 3) Trava de segurança extra (mesmo que caia dentro de pasta liberada)
+_strategy/
+_estrategia/
+notes/
+scratch/
+tmp/
+*.local
+*.local.*
+*.md.bak
+*.psd
+*.ai
+*.sketch
+*.fig
+*.zip
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
