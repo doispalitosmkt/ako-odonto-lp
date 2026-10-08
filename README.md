@@ -22,7 +22,7 @@ Open Graph e Twitter Card usam uma imagem 1200 × 630 px criada a partir da foto
 
 Apenas interface, máscara de telefone e validação local. Não envia dados, não gera conversão de lead e não redireciona automaticamente. A integração com WhatsApp, RD Station ou ambos será definida depois pelo usuário. Ao tentar enviar dados válidos, a interface informa a indisponibilidade do agendamento e permite contato manual com a clínica.
 
-Dados pessoais não são salvos em storage nem incluídos nos eventos de interface enviados ao dataLayer. O Google Tag Manager original permanece configurado para a versão pública; na prévia em localhost, fica inativo para os testes não entrarem na medição da clínica.
+Dados pessoais não são salvos em storage nem incluídos nos eventos de interface enviados ao dataLayer. O Google Tag Manager original permanece configurado para a versão pública; nas prévias em localhost e GitHub Pages, fica inativo para os testes não entrarem na medição da clínica.
 
 ## Interações
 

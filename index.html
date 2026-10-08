@@ -115,8 +115,12 @@
     </script>
     <script>
       (function (w, d, s, l, i) {
-        // A prévia local não alimenta a medição da clínica.
-        if (["localhost", "127.0.0.1", "::1"].includes(w.location.hostname))
+        // Prévia local e GitHub Pages não alimentam a medição da clínica.
+        if (
+          ["localhost", "127.0.0.1", "::1"].includes(w.location.hostname) ||
+          (w.location.hostname === "doispalitosmkt.github.io" &&
+            w.location.pathname.startsWith("/ako-odonto-preview/"))
+        )
           return;
         w[l] = w[l] || [];
         w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
