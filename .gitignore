@@ -12,6 +12,7 @@
 !/index.html
 !/README.md
 !/.gitignore
+!/.nojekyll
 !/css/
 !/js/
 !/assets/
@@ -32,6 +33,8 @@ tmp/
 *.sketch
 *.fig
 *.zip
+/assets/img/antes-depois/implantes-protese-*.webp
+/assets/img/antes-depois/coroas-*.webp
 .DS_Store
 Thumbs.db
 .vscode/
