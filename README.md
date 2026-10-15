@@ -10,13 +10,27 @@ Na pasta do projeto:
 python -m http.server 5173 --bind 127.0.0.1
 ```
 
-Abra http://127.0.0.1:5173/. Não há instalação de dependências nem etapa de build.
+Abra http://127.0.0.1:5173/. A interface não precisa de dependências para funcionar localmente.
 
-Prévia pública: https://doispalitosmkt.github.io/ako-odonto-preview/ . O repositório `ako-odonto-preview` serve apenas para revisão pelo GitHub Pages; o código principal está em `doispalitosmkt/ako-odonto-lp`.
+Publicação de produção: https://lp.akoodonto.com/ . O código principal está em `doispalitosmkt/ako-odonto-lp`; o repositório de preview não participa da publicação na Cloudflare.
+
+## Publicação na Cloudflare
+
+Cloudflare Workers Static Assets, Worker `ako-odonto-lp`, domínio personalizado `lp.akoodonto.com`. O site é servido por arquivos estáticos, sem script de servidor, banco ou bindings.
+
+Configuração do deploy automático pelo GitHub: branch `main`, raiz `/`, build `npm run build`, deploy `npx wrangler deploy`. Não são necessárias variáveis de aplicação. Node `24.19.0` e Wrangler `4.151.0`.
+
+```sh
+npm ci
+npm run build
+npm run deploy:check
+```
+
+O build apenas copia `index.html`, `assets/`, `css/` e `js/` para `dist/`. Arquivos de configuração, README e pasta Git não são publicados. Credenciais ficam nas configurações de build da Cloudflare, nunca nos arquivos da LP.
 
 ## Compartilhamento social
 
-Open Graph e Twitter Card usam uma imagem 1200 × 630 px criada a partir da fotografia real da Dra. Elza com o bebê. A URL da imagem aponta para a prévia pública, permitindo que as redes a carreguem antes da publicação no domínio definitivo. Na publicação final, esse endereço poderá ser trocado pelo mesmo arquivo em `akoodonto.com`.
+Open Graph e Twitter Card usam uma imagem 1200 × 630 px criada a partir da fotografia real da Dra. Elza com o bebê. A imagem é servida pelo próprio domínio `lp.akoodonto.com`, assim como as URLs de compartilhamento e a canonical da LP.
 
 ## Formulário
 

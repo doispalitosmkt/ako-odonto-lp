@@ -18,6 +18,11 @@
 !/assets/
 !/robots.txt
 !/sitemap.xml
+!/package.json
+!/package-lock.json
+!/.node-version
+!/wrangler.jsonc
+!/scripts/
 
 # 3) Trava de segurança extra (mesmo que caia dentro de pasta liberada)
 _strategy/
