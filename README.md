@@ -14,6 +14,8 @@ Abra http://127.0.0.1:5173/. A interface não precisa de dependências para func
 
 Publicação de produção: https://lp.akoodonto.com/ . O código principal está em `doispalitosmkt/ako-odonto-lp`; o repositório de preview não participa da publicação na Cloudflare.
 
+O subdomínio está configurado na zona DNS Cloudflare de `akoodonto.com`, com certificado HTTPS gerenciado pela plataforma. Requisições HTTP redirecionam para HTTPS preservando o caminho e os parâmetros da URL. A publicação desta LP não substitui o site institucional em `akoodonto.com`.
+
 ## Publicação na Cloudflare
 
 Cloudflare Workers Static Assets, Worker `ako-odonto-lp`, domínio personalizado `lp.akoodonto.com`. O site é servido por arquivos estáticos, sem script de servidor, banco ou bindings.
