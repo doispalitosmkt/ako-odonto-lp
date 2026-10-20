@@ -72,9 +72,9 @@
       as="image"
       fetchpriority="high"
     />
-    <link rel="stylesheet" href="css/styles.css?v=20261008-5" />
+    <link rel="stylesheet" href="css/styles.css?v=20261020-1" />
     <script src="assets/vendor/lottie-light.min.js" defer></script>
-    <script src="js/main.js" defer></script>
+    <script src="js/main.js?v=20261020-1" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -157,14 +157,16 @@
           ><a href="#duvidas">Dúvidas</a>
         </nav>
         <a
-          class="button header-cta"
-          href="#avaliacao"
+          class="button button-whatsapp header-cta"
+          href="https://wa.me/5511966385267"
+          target="_blank"
+          rel="noopener"
           data-cta-location="header"
           ><img
             class="icon icon-white"
-            src="assets/icons/tabler/calendar-month.svg"
+            src="assets/icons/tabler/brand-whatsapp.svg"
             alt=""
-          />Agendar avaliação</a
+          />Falar no WhatsApp</a
         >
         <button
           class="menu-toggle"
@@ -189,7 +191,15 @@
         ><a href="#dra-elza">Conheça a Dra. Elza</a
         ><a href="#duvidas">Dúvidas frequentes</a
         ><a href="#localizacao">Como chegar</a
-        ><a href="#avaliacao">Agendar avaliação</a>
+        ><a href="#avaliacao">Agendar avaliação</a
+        ><a
+          class="mobile-nav-whatsapp"
+          href="https://wa.me/5511966385267"
+          target="_blank"
+          rel="noopener"
+          data-cta-location="menu-mobile"
+          >Falar no WhatsApp</a
+        >
       </nav>
     </header>
     <main id="conteudo" tabindex="-1">
@@ -357,14 +367,17 @@
                   pode falar diretamente com a clínica.
                 </p>
                 <a
+                  class="form-status-whatsapp"
                   href="https://wa.me/5511966385267"
                   target="_blank"
                   rel="noopener"
-                  >Falar com a equipe no WhatsApp<img
+                  data-cta-location="formulario-indisponivel"
+                  ><img
                     class="icon icon-white"
-                    src="assets/icons/tabler/arrow-up-right.svg"
+                    src="assets/icons/tabler/brand-whatsapp.svg"
                     alt=""
-                /></a>
+                  />Falar com a equipe no WhatsApp</a
+                >
               </div>
             </form>
           </div>
@@ -493,6 +506,18 @@
                   alt=""
               /></a>
             </p>
+            <a
+              class="button button-whatsapp treatment-whatsapp"
+              href="https://wa.me/5511966385267"
+              target="_blank"
+              rel="noopener"
+              data-cta-location="tratamentos"
+              ><img
+                class="icon icon-white"
+                src="assets/icons/tabler/brand-whatsapp.svg"
+                alt=""
+              />Tirar dúvidas no WhatsApp</a
+            >
           </div>
           <div class="treatment-media" data-reveal>
             <div class="portrait-frame">
@@ -967,14 +992,17 @@
               >
             </p>
             <a
-              class="button button-outline"
-              href="#avaliacao"
+              class="button button-whatsapp"
+              href="https://wa.me/5511966385267"
+              target="_blank"
+              rel="noopener"
               data-cta-location="todos-servicos-final"
-              >Quero uma avaliação<img
-                class="icon"
-                src="assets/icons/tabler/arrow-right.svg"
+              ><img
+                class="icon icon-white"
+                src="assets/icons/tabler/brand-whatsapp.svg"
                 alt=""
-            /></a>
+              />Tirar dúvidas no WhatsApp</a
+            >
           </div>
         </div>
       </section>
@@ -1321,12 +1349,18 @@
                 >Seu tratamento começa com uma avaliação individual.</span
               >
             </p>
-            <a class="button" href="#avaliacao" data-cta-location="antes-depois"
-              >Quero avaliar meu caso<img
+            <a
+              class="button button-whatsapp"
+              href="https://wa.me/5511966385267"
+              target="_blank"
+              rel="noopener"
+              data-cta-location="antes-depois"
+              ><img
                 class="icon icon-white"
-                src="assets/icons/tabler/arrow-right.svg"
+                src="assets/icons/tabler/brand-whatsapp.svg"
                 alt=""
-            /></a>
+              />Avaliar meu caso no WhatsApp</a
+            >
           </div>
         </div>
       </section>
@@ -1373,16 +1407,30 @@
               >Segunda a sexta, 9h às 18h<br />Sábado, 9h às 13h</span
             >
           </div>
-          <a
-            class="button button-outline"
-            href="https://www.google.com/maps/search/?api=1&query=AKO+ODONTO+Rua+Tobias+Asser+12+Sao+Paulo"
-            target="_blank"
-            rel="noopener"
-            >Conheça nossa clínica<img
-              class="icon"
-              src="assets/icons/tabler/arrow-up-right.svg"
-              alt=""
-          /></a>
+          <div class="clinic-actions">
+            <a
+              class="button button-outline"
+              href="https://www.google.com/maps/search/?api=1&query=AKO+ODONTO+Rua+Tobias+Asser+12+Sao+Paulo"
+              target="_blank"
+              rel="noopener"
+              >Conheça nossa clínica<img
+                class="icon"
+                src="assets/icons/tabler/arrow-up-right.svg"
+                alt=""
+            /></a>
+            <a
+              class="button button-whatsapp"
+              href="https://wa.me/5511966385267"
+              target="_blank"
+              rel="noopener"
+              data-cta-location="clinica"
+              ><img
+                class="icon icon-white"
+                src="assets/icons/tabler/brand-whatsapp.svg"
+                alt=""
+              />Falar com a clínica</a
+            >
+          </div>
         </div>
       </section>
       <section
@@ -1448,6 +1496,18 @@
                 src="assets/icons/tabler/arrow-up-right.svg"
                 alt=""
             /></a>
+            <a
+              class="button button-whatsapp doctor-whatsapp"
+              href="https://wa.me/5511966385267"
+              target="_blank"
+              rel="noopener"
+              data-cta-location="dra-elza"
+              ><img
+                class="icon icon-white"
+                src="assets/icons/tabler/brand-whatsapp.svg"
+                alt=""
+              />Conversar com a equipe</a
+            >
           </div>
         </div>
       </section>
@@ -1504,12 +1564,18 @@
               </p>
             </li>
           </ol>
-          <a class="button" href="#avaliacao" data-cta-location="processo"
-            >Quero dar o primeiro passo<img
+          <a
+            class="button button-whatsapp"
+            href="https://wa.me/5511966385267"
+            target="_blank"
+            rel="noopener"
+            data-cta-location="processo"
+            ><img
               class="icon icon-white"
-              src="assets/icons/tabler/arrow-right.svg"
+              src="assets/icons/tabler/brand-whatsapp.svg"
               alt=""
-          /></a>
+            />Começar pelo WhatsApp</a
+          >
         </div>
       </section>
       <section
@@ -2425,6 +2491,21 @@
             </p>
           </div>
         </div>
+        <div class="reviews-footer container" data-reveal>
+          <p>Seu próximo cuidado pode começar com uma conversa.</p>
+          <a
+            class="button button-whatsapp"
+            href="https://wa.me/5511966385267"
+            target="_blank"
+            rel="noopener"
+            data-cta-location="avaliacoes"
+            ><img
+              class="icon icon-white"
+              src="assets/icons/tabler/brand-whatsapp.svg"
+              alt=""
+            />Falar com a equipe</a
+          >
+        </div>
       </section>
       <section
         class="faq-section section"
@@ -2441,12 +2522,6 @@
               Uma boa decisão começa com informação. Se sua dúvida não está
               aqui, nossa equipe ajuda você.
             </p>
-            <a class="text-link" href="#avaliacao"
-              >Quero conversar sobre meu caso<img
-                class="icon"
-                src="assets/icons/tabler/arrow-right.svg"
-                alt=""
-            /></a>
           </div>
           <div class="faq-items" data-reveal>
             <details>
@@ -2536,6 +2611,21 @@
               </p>
             </details>
           </div>
+        </div>
+        <div class="faq-footer container" data-reveal>
+          <p>Ficou alguma dúvida? A equipe ajuda você a dar o próximo passo.</p>
+          <a
+            class="button button-whatsapp"
+            href="https://wa.me/5511966385267"
+            target="_blank"
+            rel="noopener"
+            data-cta-location="duvidas"
+            ><img
+              class="icon icon-white"
+              src="assets/icons/tabler/brand-whatsapp.svg"
+              alt=""
+            />Tirar dúvida no WhatsApp</a
+          >
         </div>
       </section>
       <section
@@ -2666,15 +2756,27 @@
                 />
               </a>
               <a
-                class="button location-directions"
+                class="button button-outline location-directions"
                 href="https://www.google.com/maps/dir/?api=1&amp;destination=AKO+ODONTO%2C+Rua+Tobias+Asser+12%2C+Jardim+Santa+Terezinha%2C+Sao+Paulo%2C+SP"
                 target="_blank"
                 rel="noopener"
                 ><img
-                  class="icon icon-white"
+                  class="icon"
                   src="assets/icons/tabler/map-pin.svg"
                   alt=""
                 />Como chegar</a
+              >
+              <a
+                class="button button-whatsapp location-contact"
+                href="https://wa.me/5511966385267"
+                target="_blank"
+                rel="noopener"
+                data-cta-location="localizacao"
+                ><img
+                  class="icon icon-white"
+                  src="assets/icons/tabler/brand-whatsapp.svg"
+                  alt=""
+                />Falar com a clínica</a
               >
             </div>
           </div>
@@ -2689,14 +2791,17 @@
               A gente escuta, explica e cuida.<br />Você decide com confiança.
             </p>
             <a
-              class="button button-light"
-              href="#avaliacao"
+              class="button button-whatsapp"
+              href="https://wa.me/5511966385267"
+              target="_blank"
+              rel="noopener"
               data-cta-location="final"
-              >Quero agendar minha avaliação<img
-                class="icon"
-                src="assets/icons/tabler/arrow-right.svg"
+              ><img
+                class="icon icon-white"
+                src="assets/icons/tabler/brand-whatsapp.svg"
                 alt=""
-            /></a>
+              />Conversar no WhatsApp</a
+            >
           </div>
           <div class="closing-art" aria-hidden="true">
             <img
@@ -2732,7 +2837,18 @@
           </p>
         </div>
         <div class="footer-contact">
-          <a href="tel:+5511966385267"
+          <a
+            class="footer-whatsapp"
+            href="https://wa.me/5511966385267"
+            target="_blank"
+            rel="noopener"
+            data-cta-location="rodape"
+            ><img
+              class="icon"
+              src="assets/icons/tabler/brand-whatsapp.svg"
+              alt=""
+            />Falar no WhatsApp</a
+          ><a href="tel:+5511966385267"
             ><img class="icon" src="assets/icons/tabler/phone.svg" alt="" />(11)
             96638-5267</a
           ><a
@@ -2767,16 +2883,19 @@
         >
       </div>
     </footer>
-    <div class="mobile-cta" aria-label="Agendamento rápido">
-      <a class="button" href="#avaliacao" data-cta-location="mobile"
+    <div class="mobile-cta" aria-label="Contato rápido pelo WhatsApp">
+      <a
+        class="button button-whatsapp"
+        href="https://wa.me/5511966385267"
+        target="_blank"
+        rel="noopener"
+        data-cta-location="mobile"
         ><img
           class="icon icon-white"
-          src="assets/icons/tabler/calendar-month.svg"
-          alt="" />Agendar minha avaliação<img
-          class="icon icon-white"
-          src="assets/icons/tabler/arrow-right.svg"
+          src="assets/icons/tabler/brand-whatsapp.svg"
           alt=""
-      /></a>
+        />Falar no WhatsApp</a
+      >
     </div>
   </body>
 </html>

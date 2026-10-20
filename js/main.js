@@ -81,11 +81,18 @@
   document
     .querySelectorAll('a[href*="wa.me"], a[href^="tel:"]')
     .forEach((link) => {
-      link.addEventListener("click", () =>
+      link.addEventListener("click", () => {
+        if (mobileNav.contains(link)) closeMenu();
         track(
           link.href.includes("wa.me") ? "whatsapp_click" : "telefone_click",
-        ),
-      );
+          {
+            cta_location:
+              link.dataset.ctaLocation ||
+              link.closest("section")?.id ||
+              "rodape",
+          },
+        );
+      });
     });
   phoneInput.addEventListener("input", () => {
     const rawDigits = phoneInput.value.replace(/\D/g, "");

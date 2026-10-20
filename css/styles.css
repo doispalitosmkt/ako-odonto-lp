@@ -29,6 +29,8 @@
 :root {
   --red: #861126;
   --red-dark: #b61934;
+  --whatsapp: #0b7a43;
+  --whatsapp-dark: #075e35;
   --ink: #242121;
   --muted: #51494b;
   --paper: #faf8f5;
@@ -4296,5 +4298,143 @@ body {
   }
   .location-rating {
     flex-wrap: wrap;
+  }
+}
+
+/* Ações de contato: verde WhatsApp mais escuro para texto branco legível. */
+.button.button-whatsapp,
+.form-status .form-status-whatsapp {
+  background: var(--whatsapp);
+  border-color: var(--whatsapp);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(7, 94, 53, 0.16);
+}
+.button.button-whatsapp:hover,
+.form-status .form-status-whatsapp:hover {
+  background: var(--whatsapp-dark);
+  border-color: var(--whatsapp-dark);
+  color: #fff;
+}
+.button.button-whatsapp:focus-visible,
+.form-status .form-status-whatsapp:focus-visible,
+.footer-contact .footer-whatsapp:focus-visible {
+  outline-color: var(--whatsapp-dark);
+}
+.button-whatsapp .icon,
+.form-status-whatsapp .icon {
+  filter: brightness(0) invert(1);
+}
+.form-status .form-status-whatsapp {
+  justify-content: center;
+  min-height: 48px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+}
+.mobile-nav a.mobile-nav-whatsapp {
+  margin-top: 8px;
+  border-radius: 10px;
+  background: var(--whatsapp);
+  color: #fff;
+  text-align: center;
+}
+.mobile-nav a.mobile-nav-whatsapp:hover {
+  background: var(--whatsapp-dark);
+}
+.treatment-whatsapp {
+  margin-top: 22px;
+}
+.clinic-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 27px;
+}
+.clinic-actions .button {
+  padding-inline: 18px;
+}
+.doctor-copy > .doctor-whatsapp {
+  display: flex;
+  width: max-content;
+  margin-top: 20px;
+}
+.reviews-footer,
+.faq-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+.reviews-footer {
+  margin-top: 64px;
+}
+.faq-footer {
+  margin-top: 42px;
+}
+.reviews-footer p,
+.faq-footer p {
+  max-width: 600px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+.location-contact {
+  width: 100%;
+  min-height: 60px;
+  font-size: 17px;
+}
+.closing .button-whatsapp {
+  border: 2px solid #fff;
+  box-shadow: 0 12px 28px rgba(36, 0, 9, 0.2);
+}
+.closing .button-whatsapp:focus-visible {
+  outline-color: #fff;
+}
+.footer-contact a.footer-whatsapp {
+  padding: 10px 14px;
+  border-radius: 9px;
+  background: var(--whatsapp);
+  color: #fff;
+  font-weight: 700;
+}
+.footer-contact a.footer-whatsapp:hover {
+  background: var(--whatsapp-dark);
+  color: #fff;
+}
+.footer-contact .footer-whatsapp .icon {
+  filter: brightness(0) invert(1);
+}
+@media (max-width: 800px) {
+  .reviews-footer,
+  .faq-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .reviews-footer .button,
+  .faq-footer .button {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .clinic-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .clinic-actions .button,
+  .treatment-whatsapp,
+  .doctor-copy > .doctor-whatsapp {
+    width: 100%;
+  }
+  .reviews-footer {
+    margin-top: 38px;
+  }
+  .faq-footer {
+    margin-top: 30px;
   }
 }

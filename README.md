@@ -36,7 +36,7 @@ Open Graph e Twitter Card usam uma imagem 1200 × 630 px criada a partir da foto
 
 ## Formulário
 
-Apenas interface, máscara de telefone e validação local. Não envia dados, não gera conversão de lead e não redireciona automaticamente. A integração com WhatsApp, RD Station ou ambos será definida depois pelo usuário. Ao tentar enviar dados válidos, a interface informa a indisponibilidade do agendamento e permite contato manual com a clínica.
+Apenas interface, máscara de telefone e validação local. Não envia dados, não gera conversão de lead e não redireciona automaticamente. A integração do formulário com WhatsApp, RD Station ou ambos será definida depois pelo usuário. Ao tentar enviar dados válidos, a interface informa a indisponibilidade do agendamento e permite contato manual com a clínica. Os botões verdes de WhatsApp abrem diretamente a conversa com a equipe, sem transmitir os dados digitados no formulário.
 
 Dados pessoais não são salvos em storage nem incluídos nos eventos de interface enviados ao dataLayer. O Google Tag Manager original permanece configurado para a versão pública; nas prévias em localhost e GitHub Pages, fica inativo para os testes não entrarem na medição da clínica.
 
@@ -48,7 +48,7 @@ Dados pessoais não são salvos em storage nem incluídos nos eventos de interfa
 - Carrossel com 15 trechos de avaliações reais do Google e links individuais para a fonte. Mostra um cartão e metade do próximo, com arraste, botões, contador e navegação por setas, Home e End; sem reprodução automática.
 - Comparadores de antes e depois independentes, com arraste, teclado e foco visível. Quatro casos reais da AKO; dois pares novos fornecidos pelo usuário foram convertidos para WebP sem retoque, e os outros dois pares permanecem nas fotografias originais.
 - FAQ em acordeão.
-- CTA de avaliação fixo no celular depois do hero.
+- CTA verde de WhatsApp fixo no celular depois do hero, com botões de contato ao fim das seções principais. O formulário continua acessível no hero, no menu e nos links individuais dos serviços.
 - Animação Lottie de dente, local, pausada fora de tela e compatível com redução de movimento.
 - Links de localização, avaliações, Instagram, telefone e contato manual.
 - Mapa incorporado do Google, estações de acesso, bairros atendidos e link para abrir a rota até a clínica. O mapa carrega sob demanda ao se aproximar da seção; endereço e link de rota permanecem visíveis sem ele.
